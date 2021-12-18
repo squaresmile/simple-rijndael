@@ -1,5 +1,6 @@
 #[test]
 fn test_dec() {
+    use crate::impls::EncryptDecryptCbc;
     use crate::impls::RijndaelCbc;
     use crate::paddings::ZeroPadding;
 
@@ -38,6 +39,7 @@ fn test_dec() {
 
 #[test]
 fn test_enc() {
+    use crate::impls::EncryptDecryptCbc;
     use crate::impls::RijndaelCbc;
     use crate::paddings::ZeroPadding;
 
@@ -76,6 +78,7 @@ fn test_enc() {
 
 #[test]
 fn test_pkcs7() {
+    use crate::impls::EncryptDecryptCbc;
     use crate::impls::RijndaelCbc;
     use crate::paddings::Pkcs7Padding;
 
